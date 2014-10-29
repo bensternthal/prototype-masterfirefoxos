@@ -9,5 +9,5 @@ Install
 Gulp Tasks
 ==========
 1. gulp serve - http server with live reload, no plugin required
-2. gulp deploy - deploy to github pages
+2. gulp deploy - deploy to github pages - not working yet
 

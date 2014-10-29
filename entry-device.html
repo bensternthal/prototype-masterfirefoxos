@@ -42,6 +42,7 @@
     <div class="container">
 
 
+
       <h1 class="title"></h1>
 
       <div class="starter-template">
@@ -49,7 +50,36 @@
         <h2>Please Select Your Device</h2>
         <br/>
         <div class="row">
-        <div class="col-md-2"><a href="entry-device-1.html"><img src="images/phone-mock.png"><br/>Alcatel</a></div>
+          <div class="col-md-2"><a href="#" onclick="$('#provider-dropdown').removeClass('hidden')">
+            <img src="images/phone-mock.png"><br/>Alcatel</a>
+
+              <div id="provider-dropdown" class="dropdown hidden">
+                 <button type="button" class="btn dropdown-toggle" id="dropdownMenu1"
+                    data-toggle="dropdown">
+                    Choose Provider
+                    <span class="caret"></span>
+                 </button>
+                 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation">
+                       <a role="menuitem" tabindex="-1" href="#" onclick="$('#country-dropdown').removeClass('hidden')">T-Mobile</a>
+                    </li>
+                 </ul>
+              </div>
+
+              <div id="country-dropdown" class="dropdown hidden">
+                 <button type="button" class="btn dropdown-toggle" id="dropdownMenu1"
+                    data-toggle="dropdown">
+                    Choose Country
+                    <span class="caret"></span>
+                 </button>
+                 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation">
+                       <a role="menuitem" tabindex="-1" href="#"  onclick="window.location.href='entry-location-3.html';">USA</a>
+                    </li>
+                 </ul>
+              </div>
+
+          </div>
           <div class="col-md-2"><img src="images/phone-mock.png"><br/>Alcatel</div>
           <div class="col-md-2"><img src="images/phone-mock.png"><br/>Alcatel</div>
           <div class="col-md-2"><img src="images/phone-mock.png"><br/>Alcatel</div>
@@ -63,9 +93,15 @@
 
     <div class="footer">
       <div class="container">
-        <p class="text-muted">Page: Entry Device</p>
+        <p class="text-muted">
+          Other Languages
+          <select class="select-lang" name="country">
+            <option>English (US)</option>
+        </select>
+        </p>
       </div>
     </div>
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

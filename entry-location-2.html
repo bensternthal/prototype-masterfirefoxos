@@ -41,21 +41,21 @@
 
     <div class="container">
 
+    <ol class="breadcrumb">
+      <li><a href="#">Country: USA</a></li>
+      <li><a href="#">Device: Alcatel</a></li>
+    </ol>
 
       <h1 class="title"></h1>
 
       <div class="starter-template">
 
-        <h2>Please Select Your Device</h2>
+        <h2>Please Select Your Carrier</h2>
         <br/>
-        <div class="row">
-        <div class="col-md-2"><a href=""><img src="images/phone-mock.png"><br/>Alcatel</a></div>
-          <div class="col-md-2"><img src="images/phone-mock.png"><br/>Alcatel</div>
-          <div class="col-md-2"><img src="images/phone-mock.png"><br/>Alcatel</div>
-          <div class="col-md-2"><img src="images/phone-mock.png"><br/>Alcatel</div>
-          <div class="col-md-2"><img src="images/phone-mock.png"><br/>Alcatel</div>
-          <div class="col-md-2"><img src="images/phone-mock.png"><br/>Alcatel</div>
-        </div>
+        <select class="select-country" name="country" onclick="window.location.href='entry-location-3.html';">
+        <option>T-Mobile</option>
+        </select>
+
 
       </div>
 
@@ -63,9 +63,15 @@
 
     <div class="footer">
       <div class="container">
-        <p class="text-muted">Page: Entry Device</p>
+        <p class="text-muted">
+          Other Languages
+          <select class="select-lang" name="country">
+            <option>English (US)</option>
+        </select>
+        </p>
       </div>
     </div>
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
