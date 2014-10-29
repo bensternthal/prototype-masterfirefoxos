@@ -9,7 +9,7 @@ var sources = {
 };
 
 gulp.task('deploy', function () {
-    return gulp.src('./**/*')
+    return gulp.src('./index.html')
         .pipe(deploy());
 });
 
