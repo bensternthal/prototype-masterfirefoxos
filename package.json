@@ -8,8 +8,13 @@
   },
   "author": "",
   "license": "Mozilla Public License Version 2.0",
+  "repository": "",
   "devDependencies": {
     "gulp": "~3.8.9",
-    "gulp-gh-pages": "~0.4.0"
+    "gulp-gh-pages": "~0.4.0",
+    "gulp-watch": "^0.5.4",
+    "connect-livereload": "~0.3.2",
+    "gulp-connect": "~2.0.6",
+    "gulp-ignore": "~1.2.1"
   }
 }
