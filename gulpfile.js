@@ -9,7 +9,7 @@ var sources = {
 };
 
 gulp.task('deploy', function () {
-    return gulp.src(['./**/*', '!./node_modules'])
+    return gulp.src(['./**/*', ])
         .pipe(deploy());
 });
 
