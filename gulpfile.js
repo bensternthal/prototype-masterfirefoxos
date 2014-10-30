@@ -5,11 +5,11 @@ var connect = require('gulp-connect');
 
 
 var sources = {
-    overwatch: ['./**', '!./node_modules/**']
+    overwatch: ['./**/*', '!./node_modules/**']
 };
 
 gulp.task('deploy', function () {
-    return gulp.src(sources.overwatch)
+    return gulp.src(['./**/*', '!./node_modules'])
         .pipe(deploy());
 });
 
