@@ -8,9 +8,13 @@ var sources = {
     overwatch: ['./**/*', '!./node_modules/**']
 };
 
+var options = {
+    cacheDir: '../foo'
+}
+
 gulp.task('deploy', function () {
-    return gulp.src('./**/*')
-        .pipe(deploy());
+    return gulp.src(['./**/*', '!./node_modules/**'])
+        .pipe(deploy(options));
 });
 
 gulp.task('serve', function(event) {
