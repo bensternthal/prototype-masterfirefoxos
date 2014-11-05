@@ -46,3 +46,17 @@ body {
 .col-item:hover {
   cursor: pointer;
 }
+
+.col-item p {
+  font-weight: normal;
+}
+
+
+.doc-switcher {
+  float:right;
+  font-size:14px;
+}
+
+.clear {
+  clear:both;
+}
