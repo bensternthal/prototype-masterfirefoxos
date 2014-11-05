@@ -9,7 +9,7 @@ var sources = {
 };
 
 var options = {
-    cacheDir: '../foo'
+    cacheDir: '../fo'
 }
 
 gulp.task('deploy', function () {
