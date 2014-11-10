@@ -42,24 +42,45 @@
     <div class="container">
 
       <div class="starter-template">
-        <h1>Home Content Spec</h1>
+        <h1>Version Switcher & Language Dropdown Spec</h1>
       </div>
 
-      <h2>Meta Copy</h2>
+
+      <div class="container demo-module" style="width:300px;">
+        <p class="text-muted">
+          Other Languages
+          <select class="select-lang" name="country">
+            <option>English (US)</option>
+        </select>
+        </p>
+      </div>
+
+    <br/><br/>
+
+      <div class="doc-switcher demo-module" style="width:300px;">
+        Firefox OS Version:
+        <select>
+          <option>2.0</option>
+          <option>1.4</option>
+          <option>1.0</option>
+        </select>
+        <br/>
+        <a href="">Which Version Do I Have?</a>
+      </div>
+
+      <h2>Implementation Notes</h2>
       <hr/>
       <ul class="lead">
-        <li>Headline</li>
-        <li>Intro Paragraph</li>
-        <li>Meta Tag Description</li>
+        <li><i>Other Languages Dropdown</i> in <b>footer</b> will contain all supported languages on the site
+        <ul><li>A language is supported if there is at least one version of FF translated</li></ul>
+      </li>
+      <li>If a user selects a language using the version switcher for which there is no translation - display the following:
+        <ul><li>Documentation for {ff version} is not available in {user selected language}, <a href="">View English Version</a></li></ul>
+      </li>
+      <li>Clicking link loads english version of the page and also switches the users language.
       </ul>
       <br/>
 
-      <h2>Content</h2>
-      <hr/>
-      <ul class="lead">
-        <li>(5) Pargraphs Describing Each Section With Icons</li>
-      </ul>
-      <br/>
     </div>
     <!-- /.container -->
 
